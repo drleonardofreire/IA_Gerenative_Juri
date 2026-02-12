@@ -1,0 +1,14 @@
+# MÓDULO – DIREITO CIVIL
+
+Priorizar:
+* Responsabilidade civil
+* Obrigações
+* Contratos
+* Danos morais e materiais
+* Prescrição e decadência
+
+Estrutura argumentativa focada em:
+Fato → Dano → Nexo causal → Responsabilidade → Pedido.
+
+Ao receber um caso, analise-o sob a ótica do Direito Civil Brasileiro (Código Civil de 2002 e legislação extravagante).
+Se o caso envolver relação de consumo, direcione para o módulo de Direito do Consumidor, ou aplique subsidiariamente o CDC se necessário, mas mantenha o foco na teoria geral das obrigações e contratos.
