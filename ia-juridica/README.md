@@ -102,6 +102,28 @@ Isso significa que o executável do uvicorn não está no seu PATH. Tente uma da
     python -m uvicorn backend.main:app --reload
     ```
 
+**Erro: `No module named pip` ou `pip: command not found`**
+
+Isso indica que seu ambiente virtual (`venv`) está corrompido ou foi criado sem o pip. Para corrigir (no Windows):
+
+1.  Apague a pasta `venv` atual.
+2.  Crie um novo ambiente virtual com o comando abaixo (o argumento `--without-pip` deve ser evitado, mas se usou antes, agora use o padrão):
+    ```powershell
+    python -m venv venv
+    ```
+3.  Ative o ambiente:
+    ```powershell
+    .\venv\Scripts\activate
+    ```
+4.  Atualize o pip (opcional, mas recomendado):
+    ```powershell
+    python -m pip install --upgrade pip
+    ```
+5.  Tente instalar as dependências novamente:
+    ```powershell
+    pip install -r requirements.txt
+    ```
+
 ## Testando a API
 
 Você pode testar a API enviando uma requisição POST para `/chat`:
