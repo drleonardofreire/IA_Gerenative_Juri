@@ -58,6 +58,20 @@ O sistema é dividido em módulos por área do direito:
 1.  Certifique-se de que o Ollama está rodando (geralmente em `http://localhost:11434`).
 
 2.  Inicie o servidor backend:
+
+    **Método Fácil (Scripts):**
+
+    -   **Linux/Mac/Git Bash:**
+        ```bash
+        ./run.sh
+        ```
+    -   **Windows (CMD/PowerShell):**
+        ```cmd
+        run.bat
+        ```
+
+    **Método Manual:**
+
     ```bash
     export PYTHONPATH=$PWD
     python -m uvicorn backend.main:app --reload
