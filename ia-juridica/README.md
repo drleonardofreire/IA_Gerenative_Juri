@@ -60,10 +60,33 @@ O sistema é dividido em módulos por área do direito:
 2.  Inicie o servidor backend:
     ```bash
     export PYTHONPATH=$PWD
-    uvicorn backend.main:app --reload
+    python -m uvicorn backend.main:app --reload
     ```
 
+    *Nota: Usar `python -m uvicorn` é mais seguro para evitar erros de caminho (PATH).*
+
     O servidor estará disponível em `http://localhost:8000`.
+
+## Solução de Problemas
+
+**Erro: `bash: uvicorn: command not found`**
+
+Isso significa que o executável do uvicorn não está no seu PATH. Tente uma das seguintes soluções:
+
+1.  Certifique-se de que ativou o ambiente virtual:
+    ```bash
+    source venv/bin/activate
+    ```
+
+2.  Reinstale as dependências:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3.  Execute usando o módulo Python (recomendado):
+    ```bash
+    python -m uvicorn backend.main:app --reload
+    ```
 
 ## Testando a API
 
